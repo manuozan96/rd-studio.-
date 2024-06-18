@@ -2,7 +2,11 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
 
-const Footer = ({ children }) => {
+interface FooterProps {
+  children?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ children }) => {
   return (
     <div className={styles.layout}>
       <p className={styles.text}>

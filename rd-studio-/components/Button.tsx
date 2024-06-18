@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "../styles/Button.module.css"
+import styles from "../styles/Button.module.css";
 
-const Button = ({ contenido }) => {
-  return <button className={styles.button}>{contenido}</button>; // Añade la clase a tu botón
+interface ButtonProps {
+  contenido: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ contenido }) => {
+  return <button className={styles.button}>{contenido}</button>;
 };
 
 export default Button;
