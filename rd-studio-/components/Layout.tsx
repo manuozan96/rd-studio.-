@@ -22,7 +22,7 @@ const Layout = ({
 
   return (
     <div className={`max-w-430px ${backgroundClass.join(" ")}`}>
-      {/* <Navbar /> */}
+      <Navbar />
       <header>{show && <Banner />}</header>
       <main>{children}</main>
       <Footer />
