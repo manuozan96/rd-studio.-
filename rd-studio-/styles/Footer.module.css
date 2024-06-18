@@ -1,0 +1,95 @@
+.layout {
+  width: 430px;
+  height: auto; /* Cambiado a auto */
+  padding: 115px 0;
+  background-color: #f94940;
+  display: flex; /* Agregado para permitir el uso de gap */
+  flex-direction: column; /* Agregado para permitir el uso de gap */
+  gap: 56px; /* Ahora tendrá efecto porque layout es un contenedor flex */
+}
+
+.layout .text {
+  width: 223px;
+  height: auto;
+  padding: 0px 28px 0px 40px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: white;
+}
+
+.layout .section {
+  width: 430px;
+  height: auto; /* Cambiado a auto */
+  display: flex;
+  flex-direction: column;
+}
+
+.layout .link {
+  width: 430px;
+  height: auto;
+  padding: 21px 28px;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.66px;
+  text-align: center;
+  text-decoration: none;
+  opacity: 1;
+  color: #ededed;
+}
+
+.layout .link .arrow {
+  margin-right: 54px;
+}
+
+.layout .newSection {
+  width: 430px;
+  height: auto;
+  padding: 0px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.layout .subSection {
+  width: 374px;
+  height: auto;
+  display: flex; /* Agregado para permitir el uso de gap */
+  flex-direction: column; /* Agregado para permitir el uso de gap */
+  gap: 4px; /* Ahora tendrá efecto porque subSection es un contenedor flex */
+}
+
+.layout .officeText {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: #ededed;
+  text-transform: uppercase;
+}
+
+.layout .iconSection {
+  width: 430px; /* Ajusta este valor si es necesario */
+  height: 30px;
+  padding: 0px 28px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.layout .icon {
+  width: 30px; /* Ajusta este valor si es necesario */
+  height: 30px;
+  border: none;
+  margin-right: 15px;
+}
+
+.layout .icon:last-child {
+  margin-right: 0; /* Asegura que el último icono no tenga espacio a la derecha */
+}

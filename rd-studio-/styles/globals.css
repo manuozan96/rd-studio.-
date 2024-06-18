@@ -1,0 +1,61 @@
+:root {
+  --background-image: url("/Rectangle.jpg");
+  --background-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(105, 105, 105, 0) 30%
+  );
+}
+
+* {
+  text-decoration: none;
+}
+.bgPro {
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.bgPro2 {
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+
+.bgTransparent {
+  background-color: #ededed;
+  background-repeat: no-repeat;
+  width: 432px;
+}
+
+.linearGradient {
+  background: var(--background-gradient);
+
+}
+@keyframes color-change {
+  0% {
+    color: #000000;
+  }
+  50% {
+    color: #f94940;
+  }
+  100% {
+    color: #000000;
+  }
+}
+.app {
+  position: relative;
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 430px;
+  background: var(--background-gradient);
+  pointer-events: none; /* Esto permite que los clics pasen a través del gradiente a los elementos debajo */
+  z-index: 9999; /* Esto coloca el gradiente por encima de cualquier otro contenido dentro de .app que tenga un z-index menor */
+}

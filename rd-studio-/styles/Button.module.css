@@ -1,0 +1,25 @@
+/* Button.css */
+.button {
+  position: relative;
+  bottom: 10px;
+  width: 374px;
+  margin-left: 25px;
+  height: 56px;
+  gap: 0px;
+  border: 1px solid #f94940;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.25px;
+  text-align: center;
+  background: transparent;
+  color: #f94940;
+  cursor: pointer;
+  margin: 60px 80px 80px 30px;
+  transition: background 0.3s ease, color 0.3s ease; /* Añadido para la transición suave */
+}
+
+.button:hover {
+  background: #f94940;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+.header {
+  width: 430px;
+  position: relative;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 5%,
+    rgba(236, 230, 230, 0.5) 30%,
+    /* Ajusta la transparencia a 0.5 */ rgba(255, 255, 255, 0) 100%
+      /* Ajusta la transparencia a 1 */
+  );
+  z-index: 1;
+}
+
+.proyectoComponente {
+  width: 430px;
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 56px;
+}
+
+.seccion1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130.4%;
+  color: #f94940;
+}
+
+.seccion2,
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 7px;
+}

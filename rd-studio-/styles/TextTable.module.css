@@ -1,0 +1,49 @@
+.backInterna {
+  margin-top: 50px;
+  background-color: #ededed;
+  background-repeat: no-repeat;
+  width: 430px;
+  padding: 1px; /* Ajusta este valor según tus necesidades */
+}
+
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 28px;
+  border-bottom: 1px solid #0a0e0b;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.text {
+  font-family: "Instrument Serif", Regular, Italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
+  color: #0a0e0b;
+}
+
+.projectDescription {
+  width: 374px;
+  height: 324px;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: #0a0e0b;
+  margin: 115px auto 115px auto; /* Centra el texto horizontalmente */
+}

@@ -1,0 +1,10 @@
+.proyBackground {
+  position: relative;
+  width: 430px;
+  top: 8px;
+  left: 6px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #f3cdcd, #f3f3f3);
+  z-index: -1;
+}
