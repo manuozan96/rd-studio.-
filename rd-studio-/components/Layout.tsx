@@ -3,7 +3,15 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Banner from "./Banner";
 
-const Layout = ({
+interface LayoutProps {
+  show?: boolean;
+  transparentBackground?: boolean;
+  gradientBackground?: boolean;
+  onlyContactoBack?: boolean;
+  children?: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({
   show = true,
   transparentBackground = false,
   gradientBackground = false,
